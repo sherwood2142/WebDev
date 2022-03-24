@@ -1,12 +1,72 @@
+@import url('reset.css');
+
+html {
+    display: flex;
+}
+
 h1, h2 {
     color: white;
     background-color: black;
 }
 
 .header {
-    width: 2000px;
-    height: 60px;
-    position: fixed;
-    background: #fff;
-    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: #000000;
+}
+
+header div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header-container {
+    margin-left: 140px;
+    font-weight: bold;
+}
+
+.header-navigation {
+    margin-right: 130px;
+}
+
+.header-navigation a {
+    display: block;
+}
+
+.image img {
+    width: 100%;
+}
+
+.sectionHeader {
+    padding: 30px 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content p {
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: 0.15em;
+    padding: 5px;
+}
+
+.section-text {
+    flex-basis: 32vw;
+    padding: 5px;
+    text-align: center;
+}
+
+#link-header {
+    margin-top: 15px;
+}
+
+.links-list {
+    margin: 10px 10px;
+    font-weight: bold;
+    font-size: 26px;
 }
