@@ -1,0 +1,160 @@
+@import url("reset.css");
+
+header {
+	height: 12vmin;
+	min-height: 100px;
+	background-color: #FF5349;
+}
+
+body {
+	font-size: 1.1em;
+	line-height: 28px;
+	font-weight: 500;
+	font-family: serif;
+	color: #FFFFFF;
+}
+
+#army {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#army-button {
+	display: inline-block;
+	width: 225px;
+	float: right;
+}
+
+#navigation {
+	position: absolute;
+	display: inline-block;
+	height: 100%;
+	margin-left: 50px;
+}
+
+#navigation div {
+	display: inline-block;
+}
+
+.nav-block {
+	padding: 0 10px;
+}
+
+#content {
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	height: calc(100vh - 22vmin);
+	background-image: url('https://verelq.am/uploads/news/15c9b0008345700e5a111db5d5fb6e75.jpg');
+}
+
+#content-wrapper {
+	position: absolute;
+	top: 4vh;
+	left: 6vw;
+	width: 500px;
+}
+
+#form-wrapper {
+	border: 3px solid #FFFFFF;
+	border-radius: 15px;
+	background-color: #FF5349;
+	font-size: 1.0em;
+	padding: 3vmin 0;
+}
+
+.Title {
+	padding-bottom: 5px;
+	width: 75%;
+	position: relative;
+	margin: auto;
+	top: 30%;
+	transform: translateY(-30%);
+	text-align: center;
+}
+
+.inputFields {
+	padding-bottom: 10px;
+	width: 75%;
+	margin: auto;
+}
+
+.inputFields input {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0.7vmax 0 0 0;
+	background-color: #FF5349;
+	color: #FFFFFF;
+	border: 0;
+	border-bottom: 2px solid white;
+	font-size: 1.5rem;
+	outline: none;
+}
+
+form input[type="submit"] {
+	border: 4px solid white;
+	color: #FFFFFF;
+	font-size: 1.1em;
+	font-weight: bold;
+	height: 80px;
+	width: 250px;
+	margin: 20px auto;
+	background-color: #FF5349;
+	border-radius: 60px;
+	outline: none;
+	cursor: pointer;
+	display: block;
+}
+
+footer {
+	min-height: 70px;
+	height: 10vmin;
+	background-color: #FF5349;
+}
+
+.centered {
+	text-align: center;
+	position: relative;
+	margin: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@media screen and (max-height: 720px) {
+	#form-wrapper {
+		padding: 4vmin 0;
+	}
+
+	.inputFields {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	#content {
+		background-size: cover;
+	}
+
+	#navigation {
+		display: none;
+	}
+
+	#army-button {
+		width: auto;
+		padding-right: 25px;
+	}
+
+	#content-wrapper {
+		position: relative;
+		margin: auto;
+		left: 0;
+		width: 350px;
+	}
+
+	form input[type="submit"] {
+		margin-top: 50px;
+	}
+}
